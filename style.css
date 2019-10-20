@@ -1,0 +1,163 @@
+body {
+  font-family: "Raleway", sans-seriff;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  background: #1d1d1d;
+}
+
+.btn.btn-default {
+  background: linear-gradient(to right, #e52d27, #f27121);
+  color: #fff;
+  border-radius: 25px;
+}
+
+.card.img-top {
+  max-width: 100%;
+  max-height: 100%;
+  border: none;
+}
+
+.text-cust {
+  color: #868686;
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.5);
+}
+.navbar .navbar-brand, .navbar i {
+  font-size: 30px;
+}
+.navbar button:focus {
+  outline: none;
+  box-shadow: none;
+}
+.navbar a {
+  color: #fff;
+}
+.navbar .dropdown-item a {
+  color: #000;
+}
+.navbar .dropdown-menu.show {
+  padding: 0px;
+  color: #000;
+}
+.navbar .dropdown-menu.show :hover {
+  background: linear-gradient(to right, #e52d27, #f27121);
+  color: #fff;
+}
+
+.jumbotron-fluid {
+  background: url("assets/slide-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 695px;
+}
+.jumbotron-fluid h1 {
+  font-weight: 100;
+}
+.jumbotron-fluid h3 {
+  font-weight: bolder;
+}
+
+.about {
+  background: #1d1d1d;
+}
+
+.inmg {
+  border: 4px solid #fff;
+  z-index: 1;
+  position: relative;
+  background: #fff;
+}
+
+.inmg::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  background: linear-gradient(to right, #e52d27, #f27121);
+  margin: 35px -35px;
+  border-radius: 50px;
+}
+
+.inmg::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: linear-gradient(to right, #e52d27, #f27121);
+  margin: -35px 35px;
+  border-radius: 50px;
+}
+
+.inner-img {
+  border: none;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.context .lead {
+  font-size: 16px;
+  word-spacing: 2px;
+}
+.context .context_head {
+  font-size: 40px;
+}
+
+.card {
+  background: linear-gradient(to right, #e52d27, #f27121);
+}
+
+.latest {
+  padding-bottom: 90px;
+}
+.latest .card {
+  background: #000;
+  color: #919191;
+}
+footer::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(to right, #e52d27, #f27121);
+}
+
+footer .fa {
+  color: #919191;
+  font-size: 30px;
+  padding-left: 20px;
+}
+
+.footer-info {
+  margin: 60px;
+}
+.footer-li::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background: #fff;
+}
+
+.footer-li a {
+  color: #fff;
+  font-weight: bolder;
+}
+.display-4, .fa, .card-link, .navbar .navbar-brand, .navbar i, .latest .card .card-body > .card-link:hover, .footer-info a:hover, .footer-li a:hover {
+  font-weight: bold;
+  color: transparent;
+  -webkit-background: linear-gradient(to right, #e52d27, #f27121);
+  background: linear-gradient(to right, #e52d27, #f27121);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/*# sourceMappingURL=style.css.map */

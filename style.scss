@@ -1,0 +1,207 @@
+$color1: #e52d27;
+$color2: #f27121;
+$color3: #fff;
+$color4: #1d1d1d;
+$color5: #868686;
+$grad: linear-gradient(to right,  $color1, $color2);
+$font: 'Raleway', sans-seriff;
+
+body{
+    font-family: $font;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background: $color4;
+}
+//required stuffs
+.display-4{
+    @extend %font-style;
+}
+.btn.btn-default{
+   background: $grad;
+   color: $color3;
+   border-radius: 25px;
+}
+.fa{
+    @extend %font-style;
+}
+
+.card.img-top{
+    max-width: 100%;
+    max-height: 100%;
+    border: none;
+}
+.card-link{
+    @extend %font-style;
+}
+.text-cust{
+    color: $color5;
+}
+
+//navbar
+.navbar{
+    background: rgba(0,0,0,0.5);
+    padding: 90px 10px;
+    transition: 0.4s;
+    .navbar-brand, i{
+        font-size: 30px;
+        @extend %font-style;
+        
+    }
+    button:focus{
+        outline: none;
+        box-shadow: none;
+    }
+    a{
+        color: $color3;
+    }
+    .dropdown-item{
+        a{
+            color: #000;
+        }
+    }
+    .dropdown-menu.show{
+        padding: 0px;
+        color: #000;
+        :hover{
+            background: $grad;
+            color: $color3;
+        } 
+    }
+}
+
+//jumbotron
+.jumbotron-fluid{
+    background: url('assets/slide-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 695px;
+    h1{
+        font-weight: 100;
+    }
+    h3{
+        font-weight: bolder;
+    }
+}
+//about-us
+.about{
+    background: $color4;
+}
+.inmg{
+    border: 4px solid $color3;
+    z-index: 1;
+    position: relative;
+    background: $color3;
+}
+.inmg::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    background: $grad;
+    margin: 35px -35px;
+    border-radius: 50px;
+}
+.inmg::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: $grad;
+    margin: -35px 35px;
+    border-radius: 50px;
+}
+.inner-img{
+        border: none;
+        max-width: 100%;
+        max-height: 100%;
+}
+.context{
+    .lead{
+        font-size: 16px;
+        word-spacing: 2px;
+    }
+    .context_head{
+        font-size: 40px;
+    }
+    
+}
+//music player
+.card{
+    background: $grad;
+}
+//on-stage performance
+.on-stage{
+    
+    
+}
+
+//latest-blog
+.latest{
+    padding-bottom: 90px;
+    .card{
+        
+        background: #000;
+        color: #919191;
+
+        .card-body > .card-link:hover{
+            @extend %font-style;
+        }
+    }
+}
+
+//footer main
+footer::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: $grad;
+}
+footer{
+    .fa{
+        color: #919191;
+        font-size: 30px;
+        padding-left: 20px;
+    }
+}
+.footer-info{
+    margin: 60px;
+    a:hover{
+        @extend %font-style;
+    }
+}
+//footer-end
+.footer-li::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: $color3;
+}
+.footer-li{
+    
+    a{
+        color: $color3;
+        font-weight: bolder; 
+    }
+    a:hover{
+        @extend %font-style;
+    }
+}
+
+//inheritance
+%font-style{
+    font-weight: bold;
+    color: transparent;
+    -webkit-background: $grad;
+    background: $grad;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
